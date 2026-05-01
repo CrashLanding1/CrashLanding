@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crash Landing</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #1e293b, #0f172a);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    nav {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #f8fafc;
+      margin-top: 0;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 900px;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-top: 30px;
+      background: #334155;
+    }
+
+    .button {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background: #0ea5e9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-card {
+      background: #334155;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery div {
+      background: #334155;
+      min-height: 180px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border-radius: 15px;
+      border: none;
+      background: #334155;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Crash Landing</h1>
+    <p>
+      A sci-fi adventure game about an alien who crash lands on Earth and must collect gems,
+      repair their ship, and find a way back home.
+    </p>
+
+    <img class="hero-image" src="images/crash-landing-banner.png" alt="Crash Landing game banner">
+
+    <br>
+    <a class="button" href="#trailer">Watch Trailer</a>
+  </header>
+
+  <nav>
+    <a href="#pitch">Pitch</a>
+    <a href="#story">Story</a>
+    <a href="#gameplay">Gameplay</a>
+    <a href="#trailer">Trailer</a>
+    <a href="#design">Design</a>
+    <a href="#future">Future</a>
+  </nav>
+
+  <section id="pitch">
+    <h2>Game Pitch</h2>
+
+    <div class="card">
+      <p>
+        <strong>Crash Landing</strong> is a sci-fi exploration and survival game where the player
+        controls an alien stranded far from home. After their spaceship malfunctions and crash lands
+        on Earth, the player must explore new environments, collect gems, and use those gems to create
+        ship parts.
+      </p>
+
+      <p>
+        The game is not only about reaching the end of a level. It is about slowly rebuilding the
+        spaceship while discovering different planets, overcoming obstacles, and working toward the
+        final goal of returning home.
+      </p>
+    </div>
+  </section>
+
+  <section id="story">
+    <h2>Story</h2>
+
+    <div class="card">
+      <p>
+        In <strong>Crash Landing</strong>, the player is an alien whose spaceship suddenly
+        malfunctions and crash lands on Earth. The alien is far away from their home planet and
+        cannot return until the ship is repaired.
+      </p>
+
+      <p>
+        To fix the spaceship, the player must collect gems from different planets. These gems can be
+        brought back to the ship and turned into ship parts using a machine inside the spaceship.
+        Each gem helps the player get closer to repairing the ship.
+      </p>
+
+      <p>
+        The alien also has a teleporter that can take them to other planets. However, the teleporter
+        has limits. Since the alien’s home planet is extremely far from Earth, the player can only
+        teleport to nearby planets first. This creates a journey where the player must travel step by
+        step, collect resources, and slowly move closer to getting home.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Main Objective</h3>
+      <p>
+        The main objective is to find gems, turn them into ship parts, repair the spaceship, and
+        eventually return to the alien’s home planet.
+      </p>
+    </div>
+  </section>
+
+  <section id="gameplay">
+    <h2>Gameplay</h2>
+
+    <div class="card">
+      <p>
+        The player explores different areas while searching for gems. Gameplay can include walking,
+        jumping, avoiding hazards, using a teleporter, and returning to the ship to upgrade or repair
+        parts.
+      </p>
+
+      <p>
+        Each planet can introduce a different challenge. For example, Earth may act as the starting
+        crash site, while another planet could have icy ground, dangerous terrain, or different
+        obstacles that affects how the player should moves.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="grid-card">
+        <h3>Explore</h3>
+        <p>Travel through Earth and other nearby planets to search for gems and hidden areas.</p>
+      </div>
+
+      <div class="grid-card">
+        <h3>Collect</h3>
+        <p>Find gems that can be used as resources to create ship parts.</p>
+      </div>
+
+      <div class="grid-card">
+        <h3>Repair</h3>
+        <p>Use the ship machine to turn collected gems into parts needed to fix the spaceship.</p>
+      </div>
+
+      <div class="grid-card">
+        <h3>Return Home</h3>
+        <p>Continue upgrading the ship until the alien can finally travel back to their home planet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trailer">
+    <h2>Trailer Video</h2>
+
+    <div class="card">
+      <p>
+        The trailer shows the main gameplay of <strong>Crash Landing</strong>, including the player
+        exploring the level, collecting gems, and moving through the environment.
+      </p>
+
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Crash Landing Trailer"></iframe>
+    </div>
+  </section>
+
+  <section id="design">
+    <h2>Design and Illustrations</h2>
+
+    <div class="card">
+      <p>
+        The design of <strong>Crash Landing</strong> follows a sci-fi adventure style. The game can
+        include dark space colors, teleporters, and mysterious
+        planet environments.
+      </p>
+
+      <p>
+        The art style should make the player feel like they are exploring unknown worlds. Each planet have its own look, such as an icy planet, or a strange uneven landscape.
+      </p>
+    </div>
+
+    <div class="gallery">
+      <div>Game Screenshot / Crash Site</div>
+      <div>Alien Character Design</div>
+      <div>Gem Collectible Design</div>
+      <div>Teleporter or Spaceship Design</div>
+    </div>
+  </section>
+
+  <section id="future">
+    <h2>Future Development</h2>
+
+    <div class="card">
+      <p>
+        In the future, <strong>Crash Landing</strong> could develop into a larger adventure game with
+        more planets, more story, and more detailed gameplay. The current playable version may only
+        show the basic idea, but the full game could expand the world much further.
+      </p>
+
+      <p>
+        Future versions could include other different planets with unique mechanics. For example, unstable lighting where the player’s view changes during gameplay.
+        Lights may flicker, fade, or turn off for a short time, making it harder to see obstacles, and the path before them. These new areas would make the game more challenging and give the player more reasons
+        to keep exploring.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Future Features</h3>
+      <ul>
+        <li>More planets with different environments</li>
+        <li>Unstable lighting that affects the player’s view</li>
+        <li>Alien creatures or enemies to battle with</li>
+        <li>More types of gems and different usage</li>
+        <li>A clearer upgrade system inside the spaceship</li>
+        <li>More story scenes explaining the alien’s journey</li>
+        <li>A final ending scene where the player repairs the ship and returns home</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Crash Landing | Game Website Project</p>
+  </footer>
+
+</body>
+</html>
