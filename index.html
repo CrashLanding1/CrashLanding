@@ -8,6 +8,13 @@
 </head>
 <body>
 
+  <div class="page-bg">
+    <div class="bg-slide bg-slide1"></div>
+    <div class="bg-slide bg-slide2"></div>
+    <div class="bg-slide bg-slide3"></div>
+    <div class="bg-slide bg-slide4"></div>
+  </div>
+
   <nav>
     <div class="nav-inner">
       <a href="#home" class="logo">Crash Landing</a>
@@ -23,15 +30,6 @@
   </nav>
 
   <header id="home" class="hero">
-    <div class="hero-bg">
-      <div class="slide slide1"></div>
-      <div class="slide slide2"></div>
-      <div class="slide slide3"></div>
-      <div class="slide slide4"></div>
-    </div>
-
-    <div class="hero-overlay"></div>
-
     <div class="hero-content glass">
       <p class="eyebrow">Sci-Fi Adventure Platformer</p>
       <h1>Crash Landing</h1>
@@ -145,6 +143,7 @@
       </div>
 
       <div class="design-stack">
+
         <div class="design-card glass alien-card">
           <img class="character-img" src="Photos/stand.png" alt="Alien character design" />
           <div class="design-text">
@@ -153,37 +152,68 @@
           </div>
         </div>
 
-        <div class="design-card glass world-card">
-          <img src="Photos/EarthScene.png" alt="Earth level screenshot" />
-          <div class="design-text">
-            <h3>Earth Crash Site</h3>
-            <p>The starting world where the journey begins.</p>
+        <div class="level-section glass earth-level">
+          <h3>Earth Crash Site</h3>
+          <p>The starting world where the alien first lands.</p>
+
+          <div class="asset-grid">
+            <img src="Photos/earthfloor.png" alt="Earth scene" />
+            <img src="Photos/EarthScene.png" alt="Earth scene" />
+            <img src="Photos/earthbackground.PNG" alt="Earth background" />
           </div>
         </div>
 
-        <div class="design-card glass world-card">
-          <img src="Photos/Level1Candy.png" alt="Candy planet screenshot" />
-          <div class="design-text">
-            <h3>Candy Planet</h3>
-            <p>A bright and unusual world with a playful look.</p>
+        <div class="level-section glass candy-level">
+          <h3>Level 1: Candy Planet</h3>
+          <p>A bright candy-themed planet with colorful backgrounds, platforms, enemies, and crystals.</p>
+
+          <div class="asset-grid">
+            <img src="Photos/candybackground.PNG" alt="Candy background" />
+            <img src="Photos/cplatform.PNG" alt="Candy platform" />
+            <img src="Photos/cenemy.PNG" alt="Candy enemy" />
+            <img src="Photos/ctree.PNG" alt="Candy tree" />
+            <img src="Photos/redgem.PNG" alt="Red gem" />
           </div>
         </div>
 
-        <div class="design-card glass world-card">
-          <img src="Photos/Level2Ice.png" alt="Ice planet screenshot" />
-          <div class="design-text">
-            <h3>Ice Planet</h3>
-            <p>A cold environment with wide platforms and frozen danger.</p>
+        <div class="level-section glass ice-level">
+          <h3>Level 2: Ice Planet</h3>
+          <p>A cold ice-themed planet with slippery movement, frozen designs, and icy enemies.</p>
+
+          <div class="asset-grid">
+            <img src="Photos/Level2Ice.png" alt="Ice level scene" />
+            <img src="Photos/ibackground.PNG" alt="Ice background" />
+            <img src="Photos/ienemy2.PNG" alt="Ice enemy" />
+            <img src="Photos/bluecrystal.PNG" alt="Orange gem" />
           </div>
         </div>
 
-        <div class="design-card glass world-card">
-          <img src="Photos/Level3Lava.png" alt="Lava planet screenshot" />
-          <div class="design-text">
-            <h3>Lava Planet</h3>
-            <p>A more intense stage with heat and hazardous terrain.</p>
+        <div class="level-section glass lava-level">
+          <h3>Level 3: Lava Planet</h3>
+          <p>A dangerous lava-themed planet with darker colors, hot platforms, and stronger enemies.</p>
+
+          <div class="asset-grid">
+            <img src="Photos/Level3Lava.png" alt="Lava level scene" />
+            <img src="Photos/mbackground.PNG" alt="Lava background" />
+            <img src="Photos/mplatform.PNG" alt="Lava platform" />
+            <img src="Photos/menemy.PNG" alt="Lava enemy" />
+            <img src="Photos/orangegem.PNG" alt="Red gem" />
           </div>
         </div>
+
+        <div class="level-section glass final-level">
+          <h3>Final Level</h3>
+          <p>The last level includes final platforms, enemies, and the attack design for the ending challenge.</p>
+
+          <div class="asset-grid">
+            <img src="Photos/tplatform.PNG" alt="Final level platform" />
+            <img src="Photos/tenemy.PNG" alt="Final level enemy" />
+            <img src="Photos/attack.PNG" alt="Attack design" />
+            <img src="Photos/tice.PNG" alt="Attack design" />
+            <img src="Photos/greengem.PNG" alt="Red gem" />
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -194,7 +224,6 @@
       </div>
 
       <div class="trailer-card glass">
-        <!-- Replace VIDEO_ID_HERE -->
         <iframe
           src="https://www.youtube.com/embed/VIDEO_ID_HERE"
           title="Crash Landing Trailer"
@@ -212,7 +241,6 @@
       <div class="future-list">
         <div class="future-item glass">More planets</div>
         <div class="future-item glass">Unstable lighting</div>
-        <div class="future-item glass">Enemies or creatures</div>
         <div class="future-item glass">More gem types</div>
         <div class="future-item glass">Better upgrade system</div>
         <div class="future-item glass">Story ending scene</div>
@@ -222,6 +250,8 @@
 
   <footer>
     <p>Crash Landing | Game Website Project</p>
+    <p class="ownership">Project created by:</p>
+    <p class="owners">Andrew Bushong, Xingyao He, Marvin Sabug</p>
   </footer>
 
 </body>
