@@ -412,9 +412,21 @@ iframe {
 }
 
 .future-item {
+  padding: 28px 22px;
   text-align: center;
-  font-weight: bold;
-  color: #eff6ff;
+}
+
+.future-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.future-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
 }
 
 footer {
